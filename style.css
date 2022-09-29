@@ -165,6 +165,9 @@ body {
 	  display: block;
 	}
   }
+.p button{
+	font-family: sans-serif;
+}
 <!---------Contact------------->
 body {
 	font-family: Arial, Helvetica, sans-serif;
