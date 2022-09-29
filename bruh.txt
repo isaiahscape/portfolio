@@ -1,0 +1,41 @@
+}
+.text-container button:first-child:hover{
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400px;
+}
+.text-container button:last-child:hover{
+	background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #03a9f4);
+	background-size: 400px;
+}
+.text-container button:first-child,
+button:last-child{	
+	content: '';
+	position: absolute;
+	background: inherit;
+	top: -5px;
+	right: -5px;
+	bottom: -5px;
+	left: -5px;
+	border-radius: 50px;
+	filter: blur(20px);
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.text-container button:first-child:hover:before, button:last-child:hover:before{
+	opacity: 1;
+	z-index: 1;
+}
+.text-container button:hover{
+	z-index: 1;
+	animation: glow 8s linear infinite;
+}
+@keyframes glow {
+	0%{
+		background-position: 0%;
+
+	}
+	100%{
+		background-position: 400%;
+		
+	}
+}
